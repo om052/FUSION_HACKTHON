@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agni"
+version = "0.1.0"
+description = "Adaptive Deepfake & Liveness Intelligence"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "numpy>=1.26.4,<2.1.0",
+    "pydantic>=2.7.0,<3.0.0",
+    "opencv-python-headless>=4.9.0.80",
+    "imageio-ffmpeg>=0.4.9",
+    "scipy>=1.11.0",
+    "python_speech_features==0.6",
+    "streamlit>=1.30",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

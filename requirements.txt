@@ -1,0 +1,14 @@
+# Core Dependencies (Python 3.11)
+numpy>=1.26.4,<2.1.0
+pydantic>=2.7.0,<3.0.0
+opencv-python-headless>=4.9.0.80
+imageio-ffmpeg>=0.4.9
+scipy>=1.11.0
+python_speech_features==0.6
+pytest>=8.0.0
+streamlit>=1.30
+
+# PyTorch CPU Runtime (Installed via --index-url https://download.pytorch.org/whl/cpu)
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch>=2.2.0
+torchvision>=0.17.0

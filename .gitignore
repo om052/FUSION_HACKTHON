@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.venv/
+venv/
+
+# Model artifacts / weights (never commit)
+models/**/*.pth
+models/**/*.onnx
+models/**/*.pt
+models/**/*.pkl
+
+# Uploaded / temporary media (never commit)
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.webm
+
+# Generated reports / results
+*.json.bak
+results.json
+agni_report_*.json
+
+# Scratch / diagnostics
+.tmp/
+*.bak*
+*.log
+.backups/
+.kilo/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Local thread-calibration cache
+agni_thread_calibration.json
